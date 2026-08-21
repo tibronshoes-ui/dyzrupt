@@ -16,7 +16,7 @@ function renderList(container, items, promptInput, modalOverlay) {
   items.forEach(item => {
     const div = document.createElement('div');
     div.className = 'modal-list-item';
-    div.innerHTML = `<span>${item}</span><span class="chevron">›</span>`;
+    div.innerHTML = `<span>${item}</span>`;
     div.addEventListener('click', () => {
       if (promptInput) {
         const currentVal = promptInput.value.trim();
